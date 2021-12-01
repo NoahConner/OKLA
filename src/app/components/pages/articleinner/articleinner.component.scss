@@ -1,0 +1,181 @@
+.inner-article {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 10rem;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.cstm-container {
+    .articles-section {
+        margin-top: 5rem;
+        h1 {
+            font-family: rubikbold;
+            color: #000;
+            margin-bottom: 3rem;
+        }
+        .articles {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            .article {
+                width: 100%;
+                &:hover img {
+                    transform: scale(1.3);
+                }
+                button {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .article2 {
+                width: 100%;
+                &:hover img {
+                    transform: scale(1.3);
+                }
+                button {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .formargin {
+                margin-top: 23px;
+            }
+            .img-box {
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    transition: all 0.5s ease-in-out;
+                }
+                .content {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: #000000bd;
+                    color: #fff;
+                    padding: 10px 30px;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    align-items: center;
+                    label {
+                        font-size: 15px;
+                        font-family: rubiklight;
+                        width: 70%;
+                    }
+                    button {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      background-color: #B48618;
+                      border-radius: 50px;
+                      border: none;
+                      overflow: hidden;
+                      transition: 0.5s all ease-in-out;
+                      border: 2px solid transparent;
+                      i {
+                          font-size: 20px;
+                          transition: 0.5s all ease-in-out;
+                      }
+                      &:hover{
+                          background-color: transparent;
+                          border-color: #B48618;
+                          i{
+                              transform: rotate(360deg);
+                              color: #fff;
+                          }
+                      }
+
+                  }
+                }
+            }
+        }
+    }
+}
+
+.article-inner-content1 {
+    h2 {
+        color: #1A1A1A;
+        font-family: rubiksemibold;
+    }
+    p {
+        color: #666666;
+        font-family: poppinregular;
+    }
+}
+
+.cstm-container {
+    .articles-section {
+        .articles {
+            h2 {
+                text-align: center;
+                width: 100%;
+                color: #1A1A1A;
+                font-family: rubiksemibold;
+            }
+        }
+        .img-box {
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+.article-inner-content2 {
+    h2 {
+        color: #1A1A1A;
+        font-family: rubiksemibold;
+    }
+    p {
+        color: #666666;
+        font-family: poppinregular;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .article-inner-content1 {
+        margin-top: 1rem !important;
+        h2 {
+            font-size: 20px;
+        }
+    }
+    .article-inner-content2 h2 {
+        font-size: 22px;
+    }
+    .cstm-container .articles-section {
+        margin-top: 1rem !important;
+    }
+    .cstm-container .articles-section .articles h3 {
+        font-size: 22px;
+        margin-bottom: 0rem;
+    }
+    .cstm-container .articles-section .articles .article2 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .inner-article {
+        margin-top: 6rem;
+    }
+    .article-inner-content1 {
+        h2 {
+            font-size: 22px;
+            margin-top: 0.5rem;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .cstm-container {
+        .articles-section {
+            margin-top: 2rem !important;
+        }
+    }
+}

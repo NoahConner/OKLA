@@ -1,0 +1,223 @@
+// banner section
+.main-bg {
+    &:before {
+        background: url(../../../../assets/1x/articlebacking.png);
+        width: 100%;
+        height: 100%;
+    }
+    &:after {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.signup-heading {
+    font-size: 3.5rem;
+    color: #fff;
+    font-family: rubiklight;
+}
+
+.marginbottom {
+    margin-bottom: 5rem;
+}
+
+.cstm-container {
+    .articles-section {
+        margin-top: 5rem;
+        h1 {
+            font-family: rubikbold;
+            color: #000;
+            margin-bottom: 3rem;
+        }
+        .articles {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            .article {
+                width: 100%;
+
+                &:hover img{
+                  transform: scale(1.3);
+                }
+                button {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .article2 {
+                width: 100%;
+
+                &:hover img{
+                  transform: scale(1.3);
+                }
+                button {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .formargin {
+                margin-top: 23px;
+            }
+            .img-box {
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    transition: all 0.5s ease-in-out;
+                }
+                .content {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: #000000bd;
+                    color: #fff;
+                    padding: 10px 30px;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    align-items: center;
+                    label {
+                        font-size: 15px;
+                        font-family: rubiklight;
+                        width: 70%;
+                    }
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #B48618;
+                        border-radius: 50px;
+                        border: none;
+                        overflow: hidden;
+                        transition: 0.5s all ease-in-out;
+                        border: 2px solid transparent;
+                        i {
+                            font-size: 20px;
+                            transition: 0.5s all ease-in-out;
+                        }
+                        &:hover{
+                            background-color: transparent;
+                            border-color: #B48618;
+                            i{
+                                transform: rotate(360deg);
+                                color: #fff;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:2560px) {
+    .main-bg {
+        height: 800px !important;
+    }
+}
+
+@media only screen and (min-width:1920px) {
+    .main-bg {
+        height: 900px;
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    .main-bg {
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width:1600px) {}
+
+@media only screen and (max-width:1440px) {
+    .main-bg {
+        height: 650px;
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    .main-bg {
+        height: 520px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .main-bg {
+        height: 770px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .article {
+        margin-top: 2rem;
+    }
+    .article2 {
+        margin-top: 2rem;
+    }
+    .cstm-container {
+        .article {
+            .content {
+                button {
+                    height: 40px !important;
+                    width: 40px !important;
+                }
+            }
+        }
+        .articles-section {
+            margin-top: 5rem;
+            .articles {
+                .article2 {
+                    margin-top: 0;
+                }
+                .formargin {
+                    margin-top: 0;
+                }
+            }
+        }
+        .img-box {
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .main-bg {
+        height: 500px;
+        .row {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    .cstm-container {
+        .article {
+            .content {
+                button {
+                    height: 40px !important;
+                    width: 40px !important;
+                }
+            }
+        }
+    }
+    .cstm-container {
+        .articles-section {
+            margin-top: 5rem;
+
+            .articles {
+                .article2 {
+                    margin-top: 0;
+                }
+                .formargin {
+                    margin-top: 0;
+                }
+            }
+        }
+        .img-box {
+            margin-top: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,429 @@
+<!-- home banner -->
+<div class="main-bg d-flex align-items-center" [ngClass]="href == '/forbuy' ? 'forBuyBg' : 'forRentBg'">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6" *ngIf="href == '/forbuy'">
+        <h1 class="wow fadeInUp" data-wow-delay="0.5s">Want to <span> Buy </span> your <span>Dream House</span>?</h1>
+      </div>
+      <div class="col-lg-6" *ngIf="href == '/forrent'">
+        <h1>Find the <span> Perfect </span> <br> <span>Rentals</span></h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- home search box -->
+<div class="search wow fadeInDown" data-wow-delay="0.5s">
+  <div class="search-box">
+    <div class="search_Boxs">
+      <div class="row">
+        <div class="col-xl-6 ">
+          <input type="text" placeholder="Enter city or state to find a property!">
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 pr-lg-0 d-flex align-items-center">
+          <div class="buttonsBox1 w-100">
+            <ng-select placeholder=" No Min">
+              <ng-option>
+                1
+              </ng-option>
+              <ng-option>
+                2
+              </ng-option>
+            </ng-select>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 pr-lg-0 d-flex align-items-center">
+          <div class="buttonsBox1 w-100">
+            <ng-select placeholder="No Max">
+              <ng-option>
+                100
+              </ng-option>
+              <ng-option>
+                200
+              </ng-option>
+            </ng-select>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12">
+          <div class="buttonsBox1 w-100">
+            <button class="black-btn btn-slide-left">Search</button>
+          </div>
+        </div>
+        <!-- <input type="text" placeholder="Enter city or state to find a property!">
+      <div class="mainbtnsBox d-flex">
+        <div class="buttonsBox1">
+          <ng-select placeholder=" No Min">
+            <ng-option>
+              1
+            </ng-option>
+            <ng-option>
+              2
+            </ng-option>
+          </ng-select>
+        </div>
+        <div class="buttonsBox1">
+          <ng-select placeholder="No Max">
+            <ng-option>
+              100
+            </ng-option>
+            <ng-option>
+              200
+            </ng-option>
+          </ng-select>
+        </div>
+        <div class="buttonsBox1">
+          <button class="black-btn btn-slide-left">Search</button>
+        </div>
+      </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- </div>
+</div> -->
+  <!-- slick slider -->
+  <div class="container wow fadeInUp" data-wow-delay="0.5s">
+    <h1 class="text-center housesForSeal mt5 mb3">
+      {{
+      href == '/forrent' ? 'Oklahoma City Houses For Rent' : 'Oklahoma City Houses For Sale'
+      }}
+    </h1>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 pr-lg-0 ">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a href="javascript:void()" routerlink="/propertyinner" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 pr-lg-0 ">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a routerlink="/propertyinner" href="javascript:void()" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 pr-lg-0">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a routerlink="/propertyinner" href="javascript:void()" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt3 mb3 wow bounceIn" data-wow-delay="0.5s">
+      <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forbuy'" routerLink='/propertiesbuy'>See
+        All</button>
+      <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forrent'" routerLink='/propertiesrent'>See
+        All</button>
+    </div>
+
+  </div>
+
+  <!-- slick slider -->
+  <div class="container wow fadeInUp" data-wow-delay="0.5s">
+    <h1 class="text-center housesForSeal mt7 mb2" *ngIf="href == '/forbuy'">Tulsa Houses For Sale</h1>
+    <h1 class="text-center housesForSeal mt7 mb2" *ngIf="href == '/forrent'">Tulsa Houses For Rent</h1>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 pr-lg-0 ">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a routerlink="/propertyinner" href="javascript:void()" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 pr-lg-0 ">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a routerlink="/propertyinner" href="javascript:void()" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 pr-lg-0">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a routerlink="/propertyinner" href="javascript:void()" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt2 mb3 wow bounceIn" data-wow-delay="0.5s">
+      <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forbuy'" routerLink='/propertiesbuy'>See
+        All</button>
+      <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forrent'" routerLink='/propertiesrent'>See
+        All</button>
+    </div>
+
+  </div>
+
+  <!-- slick slider -->
+  <div class="container wow fadeInUp" data-wow-delay="0.5s">
+    <h1 class="text-center housesForSeal mt7 mb2" *ngIf="href == '/forbuy'">Norman Houses For Sale</h1>
+    <h1 class="text-center housesForSeal mt7 mb2" *ngIf="href == '/forrent'">Norman Houses For Rent</h1>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 pr-lg-0 ">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a routerlink="/propertyinner" href="javascript:void()" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 pr-lg-0 ">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a routerlink="/propertyinner" href="javascript:void()" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 pr-lg-0">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a routerlink="/propertyinner" href="javascript:void()" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt2 mb3 wow bounceIn" data-wow-delay="0.5s">
+      <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forbuy'" routerLink='/propertiesbuy'>See
+        All</button>
+      <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forrent'" routerLink='/propertiesrent'>See
+        All</button>
+    </div>
+
+  </div>
+
+  <!-- slick slider -->
+  <div class="container wow fadeInUp" data-wow-delay="0.5s">
+    <h1 class="text-center housesForSeal mt7 mb2" *ngIf="href == '/forbuy'">
+      Edmond Houses For Sale
+    </h1>
+    <h1 class="text-center housesForSeal mt7 mb2" *ngIf="href == '/forrent'">
+      Edmond Houses For Rent
+    </h1>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 pr-lg-0 ">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a routerlink="/propertyinner" href="javascript:void()" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 pr-lg-0 ">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a routerlink="/propertyinner" href="javascript:void()" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 pr-lg-0">
+        <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+          class="mainBox slide">
+          <div class="heart-icon"><img src="assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+            width="100%" src="assets/1x/sliderimg2.png">
+          <div class="content"><a routerlink="/propertyinner" href="javascript:void()" ng-reflect-router-link="/propertyinner"
+              href="/propertyinner" tabindex="0">
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave.
+                    Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                    </strong></label></div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt2 mb6 wow bounceIn" data-wow-delay="0.5s">
+      <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forbuy'" routerLink='/propertiesbuy'>See
+        All</button>
+      <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forrent'" routerLink='/propertiesrent'>See
+        All</button>
+    </div>
+
+  </div>
